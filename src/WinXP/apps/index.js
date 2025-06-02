@@ -58,27 +58,7 @@ const genId = gen();
 const genIndex = gen();
 
 export const defaultAppState = [
-  {
-    component: Winamp,
-    header: {
-      title: 'Winamp',
-      icon: winamp,
-      invisible: true,
-    },
-    defaultSize: {
-      width: 275,
-      height: 116,
-    },
-    defaultOffset: {
-      x: window.innerWidth - 275, // Position on the right side
-      y: 100,
-    },
-    resizable: false,
-    minimized: false,
-    maximized: false,
-    id: genId(),
-    zIndex: genIndex(),
-  },
+  // Removed Winamp from default apps - it will only open when user clicks it
 ];
 
 export const defaultIconState = [
