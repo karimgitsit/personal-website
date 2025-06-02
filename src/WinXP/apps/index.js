@@ -3,7 +3,6 @@ import Minesweeper from './Minesweeper';
 import ErrorBox from './ErrorBox';
 import MyComputer from './MyComputer';
 import Notepad from './Notepad';
-import Winamp from './Winamp';
 import Paint from './Paint';
 import AngelInvestments from './AngelInvestments';
 import AboutMe from './AboutMe';
@@ -19,62 +18,33 @@ import error from 'assets/windowsIcons/897(16x16).png';
 import computer from 'assets/windowsIcons/676(16x16).png';
 import computerLarge from 'assets/windowsIcons/676(32x32).png';
 import notepad from 'assets/windowsIcons/327(16x16).png';
-import notepadLarge from 'assets/windowsIcons/327(32x32).png';
-import winamp from 'assets/windowsIcons/winamp.png';
-import paintLarge from 'assets/windowsIcons/680(32x32).png';
-import paint from 'assets/windowsIcons/680(16x16).png';
+import paint from 'assets/windowsIcons/252(16x16).png';
+import paintLarge from 'assets/windowsIcons/252(32x32).png';
 
-import { 
-  investmentsFolderIcon,
-  bioFolderIcon,
-  writingFolderIcon,
+import {
   investmentsFolderIcon32,
-  bioFolderIcon32,
-  writingFolderIcon32,
-  telegramFolderIcon32,
-  emailFolderIcon32,
-  airdropFolderIcon32,
   investmentsFolderIcon16,
+  bioFolderIcon32,
   bioFolderIcon16,
+  writingFolderIcon32,
   writingFolderIcon16,
+  telegramFolderIcon32,
   telegramFolderIcon16,
+  emailFolderIcon32,
   emailFolderIcon16,
-  airdropFolderIcon16
+  airdropFolderIcon32,
+  airdropFolderIcon16,
 } from 'assets/personalIcons';
 
-const gen = () => {
-  let id = -1;
-  return () => {
-    id += 1;
-    return id;
-  };
-};
+function gen() {
+  let id = 0;
+  return () => id++;
+}
+
 const genId = gen();
 const genIndex = gen();
 
-export const defaultAppState = [
-  {
-    component: Winamp,
-    header: {
-      title: 'Winamp',
-      icon: winamp,
-      invisible: true,
-    },
-    defaultSize: {
-      width: 275,
-      height: 116,
-    },
-    defaultOffset: {
-      x: window.innerWidth - 275, // Position on the right side
-      y: 100,
-    },
-    resizable: false,
-    minimized: false,
-    maximized: false,
-    id: genId(),
-    zIndex: genIndex(),
-  },
-];
+export const defaultAppState = [];
 
 export const defaultIconState = [
   {
@@ -144,6 +114,13 @@ export const defaultIconState = [
     id: 9,
     icon: mine,
     title: 'Minesweeper',
+    component: Minesweeper,
+    isFocus: false,
+  },
+  {
+    id: 10,
+    icon: mine,
+    title: 'Spider Solitaire',
     component: Minesweeper,
     isFocus: false,
   },
@@ -321,6 +298,25 @@ export const appSettings = {
     maximized: false,
     multiInstance: true,
   },
+  'Spider Solitaire': {
+    header: {
+      icon: mine,
+      title: 'Spider Solitaire',
+    },
+    component: Minesweeper,
+    defaultSize: {
+      width: 0,
+      height: 0,
+    },
+    defaultOffset: {
+      x: 150,
+      y: 200,
+    },
+    resizable: false,
+    minimized: false,
+    maximized: false,
+    multiInstance: true,
+  },
   Error: {
     header: {
       icon: error,
@@ -378,26 +374,6 @@ export const appSettings = {
     maximized: false,
     multiInstance: true,
   },
-  Winamp: {
-    header: {
-      icon: winamp,
-      title: 'Winamp',
-      invisible: true,
-    },
-    component: Winamp,
-    defaultSize: {
-      width: 275,
-      height: 116,
-    },
-    defaultOffset: {
-      x: window.innerWidth - 275, // Position on the right side
-      y: 100,
-    },
-    resizable: false,
-    minimized: false,
-    maximized: false,
-    multiInstance: false,
-  },
 };
 
-export { InternetExplorer, Minesweeper, ErrorBox, MyComputer, Notepad, Winamp };
+export { InternetExplorer, Minesweeper, ErrorBox, MyComputer, Notepad, Paint };
