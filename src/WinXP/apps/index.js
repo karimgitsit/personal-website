@@ -12,6 +12,7 @@ import Telegram from './Telegram';
 import Email from './Email';
 import Airdrop from './Airdrop';
 import SpiderSolitaire from './SpiderSolitaire';
+import MessariResearch from './MessariResearch';
 
 import iePaper from 'assets/windowsIcons/ie-paper.png';
 import ie from 'assets/windowsIcons/ie.png';
@@ -36,12 +37,14 @@ import {
   telegramFolderIcon32,
   emailFolderIcon32,
   airdropFolderIcon32,
+  messariFolderIcon32,
   investmentsFolderIcon16,
   bioFolderIcon16,
   writingFolderIcon16,
   telegramFolderIcon16,
   emailFolderIcon16,
-  airdropFolderIcon16
+  airdropFolderIcon16,
+  messariFolderIcon16
 } from 'assets/personalIcons';
 
 const gen = () => {
@@ -123,34 +126,41 @@ export const defaultIconState = [
   },
   {
     id: 6,
+    icon: messariFolderIcon32,
+    title: 'Messari Research',
+    component: MessariResearch,
+    isFocus: false,
+  },
+  {
+    id: 7,
     icon: computerLarge,
     title: 'My Computer',
     component: MyComputer,
     isFocus: false,
   },
   {
-    id: 7,
+    id: 8,
     icon: ie,
     title: 'Internet Explorer',
     component: InternetExplorer,
     isFocus: false,
   },
   {
-    id: 8,
+    id: 9,
     icon: paintLarge,
     title: 'Paint',
     component: Paint,
     isFocus: false,
   },
   {
-    id: 9,
+    id: 10,
     icon: mine,
     title: 'Minesweeper',
     component: Minesweeper,
     isFocus: false,
   },
   {
-    id: 10,
+    id: 11,
     icon: spider,
     title: 'Spider Solitaire',
     component: SpiderSolitaire,
@@ -286,6 +296,25 @@ export const appSettings = {
     defaultOffset: {
       x: 100,
       y: 50,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: window.innerWidth < 900,
+    multiInstance: false,
+  },
+  'Messari Research': {
+    header: {
+      icon: messariFolderIcon16,
+      title: 'Messari Research - Internet Explorer',
+    },
+    component: MessariResearch,
+    defaultSize: {
+      width: 800,
+      height: 600,
+    },
+    defaultOffset: {
+      x: 120,
+      y: 80,
     },
     resizable: true,
     minimized: false,
