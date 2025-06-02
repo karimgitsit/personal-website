@@ -7,7 +7,7 @@ import Winamp from './Winamp';
 import Paint from './Paint';
 import AngelInvestments from './AngelInvestments';
 import AboutMe from './AboutMe';
-import Articles from './Articles';
+import Writing from './Writing';
 
 import iePaper from 'assets/windowsIcons/ie-paper.png';
 import ie from 'assets/windowsIcons/ie.png';
@@ -24,13 +24,13 @@ import paint from 'assets/windowsIcons/680(16x16).png';
 import { 
   investmentsFolderIcon,
   bioFolderIcon,
-  articlesFolderIcon,
+  writingFolderIcon,
   investmentsFolderIcon32,
   bioFolderIcon32,
-  articlesFolderIcon32,
+  writingFolderIcon32,
   investmentsFolderIcon16,
   bioFolderIcon16,
-  articlesFolderIcon16
+  writingFolderIcon16
 } from 'assets/personalIcons';
 
 const gen = () => {
@@ -104,9 +104,9 @@ export const defaultIconState = [
   },
   {
     id: 2,
-    icon: articlesFolderIcon32,
-    title: 'Articles',
-    component: Articles,
+    icon: writingFolderIcon32,
+    title: 'Writing',
+    component: Writing,
     isFocus: false,
   },
   {
@@ -159,8 +159,8 @@ export const appSettings = {
     },
     component: AngelInvestments,
     defaultSize: {
-      width: 800,
-      height: 600,
+      width: 400,
+      height: 300,
     },
     defaultOffset: {
       x: 100,
@@ -168,7 +168,7 @@ export const appSettings = {
     },
     resizable: true,
     minimized: false,
-    maximized: window.innerWidth < 900,
+    maximized: false,
     multiInstance: false,
   },
   'About Me': {
@@ -178,8 +178,8 @@ export const appSettings = {
     },
     component: AboutMe,
     defaultSize: {
-      width: 600,
-      height: 700,
+      width: 500,
+      height: 400,
     },
     defaultOffset: {
       x: 150,
@@ -187,17 +187,17 @@ export const appSettings = {
     },
     resizable: true,
     minimized: false,
-    maximized: window.innerWidth < 700,
+    maximized: false,
     multiInstance: false,
   },
-  'Articles': {
+  'Writing': {
     header: {
-      icon: articlesFolderIcon16,
-      title: 'Articles',
+      icon: writingFolderIcon16,
+      title: 'Writing',
     },
-    component: Articles,
+    component: Writing,
     defaultSize: {
-      width: 700,
+      width: 800,
       height: 600,
     },
     defaultOffset: {
@@ -206,7 +206,7 @@ export const appSettings = {
     },
     resizable: true,
     minimized: false,
-    maximized: window.innerWidth < 800,
+    maximized: window.innerWidth < 900,
     multiInstance: false,
   },
   Minesweeper: {

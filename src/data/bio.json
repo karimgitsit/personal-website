@@ -1,32 +1,33 @@
 {
   "name": "Karim",
-  "title": "Angel Investor & Entrepreneur",
-  "bio": "Passionate about early-stage technology companies and supporting visionary founders. I bring deep experience in scaling businesses and have been actively investing in the startup ecosystem for over 5 years.",
-  "profileImage": "https://via.placeholder.com/200x200/6c757d/ffffff?text=Profile",
-  "location": "San Francisco, CA",
+  "title": "Token design advisor, angel investor, and DeFi degen",
+  "bio": "I'm Karim, atm I'm building DeFi products and experimenting with vibecoding.\n\nIn the past I have worked at Outlier Ventures, where I was a token designer for 2 years. This entailed advising early stage crypto protocols on incentive design, product, and token economics. During my time there and since then, I have also angel invested in over 15 startups, only half of which I deeply regret\n\nMy current passion is building in DeFi, where I embrace the pseudonymous nature of the culture. I have so far:\n- Led a permissionless leverage protocol which garned over $5m in pre-deposits, and did over $250k in protocol revenue within 2 weeks of launching\n- Won 2 hackathons in first place, earning over $80k in prize money (which i quickly and unsuccessfully invested in trying to grow those products)\n- Built multiple iterations of an economic game that uses MEV to bootstrap a prize pool, and has done over $150k in game volume\n\nI am still tinkering, yield farming, and building DeFi products",
+  "profileImage": "https://via.placeholder.com/200x200/6c757d/ffffff?text=K",
+  "location": "Building in DeFi",
   "experience": [
     {
-      "title": "Angel Investor",
-      "company": "Independent",
-      "period": "2018 - Present",
-      "description": "Active angel investor focusing on SaaS, FinTech, and HealthTech startups"
+      "title": "Token Designer",
+      "company": "Outlier Ventures",
+      "period": "2 years",
+      "description": "Advised early stage crypto protocols on incentive design, product, and token economics"
     },
     {
-      "title": "Entrepreneur",
-      "company": "Previous Ventures",
-      "period": "2015 - 2018",
-      "description": "Founded and scaled multiple technology companies"
+      "title": "DeFi Builder",
+      "company": "Independent",
+      "period": "Present",
+      "description": "Building permissionless protocols, winning hackathons, and experimenting with MEV-based economic games"
     }
   ],
   "socialLinks": {
-    "linkedin": "https://linkedin.com/in/your-profile",
+    "mirror": "https://mirror.xyz/%F0%9F%94%A5%F0%9F%94%A5%F0%9F%98%8E%F0%9F%94%A5%F0%9F%94%A5.eth",
     "twitter": "https://twitter.com/your-handle",
     "email": "hello@yourname.com"
   },
   "interests": [
-    "Artificial Intelligence",
-    "Healthcare Technology",
-    "Sustainable Tech",
-    "Early-stage Investing"
+    "DeFi Protocol Design",
+    "Token Economics", 
+    "MEV Research",
+    "Yield Farming",
+    "Vibecoding"
   ]
 } 
