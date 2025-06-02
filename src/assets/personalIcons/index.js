@@ -1,30 +1,35 @@
-// Custom folder icons for personal website sections
+// Custom folder icons for personal website sections - simplified working versions
 
-// Angel Investments - Money bag icon (green folder)
-export const investmentsFolderIcon32 = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjI4IiBoZWlnaHQ9IjIwIiB4PSIyIiB5PSI2IiByeD0iMiIgZmlsbD0iIzIyOEIyMiIgc3Ryb2tlPSIjMTU2RjE1IiBzdHJva2Utd2lkdGg9IjEiLz4KPHA+PHRleHQgeD0iOCIgeT0iMjAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI0ZGRiI+JDwvdGV4dD4KPC9zdmc+';
+// Angel Investments - Green folder with $ symbol
+export const investmentsFolderIcon32 = 'data:image/svg+xml,%3Csvg width="32" height="32" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="26" height="18" x="3" y="7" rx="2" fill="%23228B22" stroke="%23156F15"/%3E%3Ctext x="16" y="19" font-family="Arial" font-size="14" fill="white" text-anchor="middle"%3E%24%3C/text%3E%3C/svg%3E';
 
-// About Me - Question mark icon (blue folder)
-export const bioFolderIcon32 = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjI4IiBoZWlnaHQ9IjIwIiB4PSIyIiB5PSI2IiByeD0iMiIgZmlsbD0iIzAwN0FDQyIgc3Ryb2tlPSIjMDA1QTk5IiBzdHJva2Utd2lkdGg9IjEiLz4KPHA+PHRleHQgeD0iMTQiIHk9IjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj4/PC90ZXh0Pgo8L3N2Zz4=';
+// About Me - Blue folder with ? symbol
+export const bioFolderIcon32 = 'data:image/svg+xml,%3Csvg width="32" height="32" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="26" height="18" x="3" y="7" rx="2" fill="%23007ACC" stroke="%23005A99"/%3E%3Ctext x="16" y="19" font-family="Arial" font-size="16" font-weight="bold" fill="white" text-anchor="middle"%3E%3F%3C/text%3E%3C/svg%3E';
 
-// Writing - Pen icon (purple folder)
-export const writingFolderIcon32 = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjI4IiBoZWlnaHQ9IjIwIiB4PSIyIiB5PSI2IiByeD0iMiIgZmlsbD0iIzY0MzJBNiIgc3Ryb2tlPSIjNEUyNTg1IiBzdHJva2Utd2lkdGg9IjEiLz4KPHA+PHRleHQgeD0iMTYiIHk9IjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIGZpbGw9IiNGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPvCfjZk8L3RleHQ+Cjwvc3ZnPg==';
+// Writing - Purple folder with pen symbol  
+export const writingFolderIcon32 = 'data:image/svg+xml,%3Csvg width="32" height="32" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="26" height="18" x="3" y="7" rx="2" fill="%236432A6" stroke="%234E2585"/%3E%3Ctext x="16" y="19" font-family="Arial" font-size="12" fill="white" text-anchor="middle"%3E%E2%9C%8F%3C/text%3E%3C/svg%3E';
 
-// Telegram - Blue folder with T
-export const telegramFolderIcon32 = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjI4IiBoZWlnaHQ9IjIwIiB4PSIyIiB5PSI2IiByeD0iMiIgZmlsbD0iIzI0OWJkNSIgc3Ryb2tlPSIjMWQ3N2FkIiBzdHJva2Utd2lkdGg9IjEiLz4KPHA+PHRleHQgeD0iMTYiIHk9IjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5UPC90ZXh0Pgo8L3N2Zz4=';
+// Telegram - Light blue folder with T
+export const telegramFolderIcon32 = 'data:image/svg+xml,%3Csvg width="32" height="32" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="26" height="18" x="3" y="7" rx="2" fill="%23249bd5" stroke="%231d77ad"/%3E%3Ctext x="16" y="19" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle"%3ET%3C/text%3E%3C/svg%3E';
 
-// Email - Orange folder with @
-export const emailFolderIcon32 = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjI4IiBoZWlnaHQ9IjIwIiB4PSIyIiB5PSI2IiByeD0iMiIgZmlsbD0iI2ZmNmMwMCIgc3Ryb2tlPSIjZDk1NzAwIiBzdHJva2Utd2lkdGg9IjEiLz4KPHA+PHRleHQgeD0iMTYiIHk9IjIwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5APC90ZXh0Pgo8L3N2Zz4=';
+// Email - Orange folder with @ symbol
+export const emailFolderIcon32 = 'data:image/svg+xml,%3Csvg width="32" height="32" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="26" height="18" x="3" y="7" rx="2" fill="%23ff6c00" stroke="%23d95700"/%3E%3Ctext x="16" y="19" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle"%3E%40%3C/text%3E%3C/svg%3E';
+
+// Airdrop - Red folder with gift symbol
+export const airdropFolderIcon32 = 'data:image/svg+xml,%3Csvg width="32" height="32" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="26" height="18" x="3" y="7" rx="2" fill="%23DC143C" stroke="%23B22222"/%3E%3Ctext x="16" y="19" font-family="Arial" font-size="12" fill="white" text-anchor="middle"%3E%F0%9F%8E%81%3C/text%3E%3C/svg%3E';
 
 // 16x16 versions for window headers
-export const investmentsFolderIcon16 = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjE0IiBoZWlnaHQ9IjEwIiB4PSIxIiB5PSIzIiByeD0iMSIgZmlsbD0iIzIyOEIyMiIgc3Ryb2tlPSIjMTU2RjE1IiBzdHJva2Utd2lkdGg9IjAuNSIvPgo8L3N2Zz4=';
+export const investmentsFolderIcon16 = 'data:image/svg+xml,%3Csvg width="16" height="16" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="14" height="10" x="1" y="3" rx="1" fill="%23228B22" stroke="%23156F15"/%3E%3C/svg%3E';
 
-export const bioFolderIcon16 = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjE0IiBoZWlnaHQ9IjEwIiB4PSIxIiB5PSIzIiByeD0iMSIgZmlsbD0iIzAwN0FDQyIgc3Ryb2tlPSIjMDA1QTk5IiBzdHJva2Utd2lkdGg9IjAuNSIvPgo8L3N2Zz4=';
+export const bioFolderIcon16 = 'data:image/svg+xml,%3Csvg width="16" height="16" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="14" height="10" x="1" y="3" rx="1" fill="%23007ACC" stroke="%23005A99"/%3E%3C/svg%3E';
 
-export const writingFolderIcon16 = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjE0IiBoZWlnaHQ9IjEwIiB4PSIxIiB5PSIzIiByeD0iMSIgZmlsbD0iIzY0MzJBNiIgc3Ryb2tlPSIjNEUyNTg1IiBzdHJva2Utd2lkdGg9IjAuNSIvPgo8L3N2Zz4=';
+export const writingFolderIcon16 = 'data:image/svg+xml,%3Csvg width="16" height="16" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="14" height="10" x="1" y="3" rx="1" fill="%236432A6" stroke="%234E2585"/%3E%3C/svg%3E';
 
-export const telegramFolderIcon16 = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjE0IiBoZWlnaHQ9IjEwIiB4PSIxIiB5PSIzIiByeD0iMSIgZmlsbD0iIzI0OWJkNSIgc3Ryb2tlPSIjMWQ3N2FkIiBzdHJva2Utd2lkdGg9IjAuNSIvPgo8L3N2Zz4=';
+export const telegramFolderIcon16 = 'data:image/svg+xml,%3Csvg width="16" height="16" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="14" height="10" x="1" y="3" rx="1" fill="%23249bd5" stroke="%231d77ad"/%3E%3C/svg%3E';
 
-export const emailFolderIcon16 = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjE0IiBoZWlnaHQ9IjEwIiB4PSIxIiB5PSIzIiByeD0iMSIgZmlsbD0iI2ZmNmMwMCIgc3Ryb2tlPSIjZDk1NzAwIiBzdHJva2Utd2lkdGg9IjAuNSIvPgo8L3N2Zz4=';
+export const emailFolderIcon16 = 'data:image/svg+xml,%3Csvg width="16" height="16" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="14" height="10" x="1" y="3" rx="1" fill="%23ff6c00" stroke="%23d95700"/%3E%3C/svg%3E';
+
+export const airdropFolderIcon16 = 'data:image/svg+xml,%3Csvg width="16" height="16" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="14" height="10" x="1" y="3" rx="1" fill="%23DC143C" stroke="%23B22222"/%3E%3C/svg%3E';
 
 // Legacy exports for backward compatibility
 export const investmentsFolderIcon = investmentsFolderIcon32;

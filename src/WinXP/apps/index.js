@@ -10,6 +10,7 @@ import AboutMe from './AboutMe';
 import Writing from './Writing';
 import Telegram from './Telegram';
 import Email from './Email';
+import Airdrop from './Airdrop';
 
 import iePaper from 'assets/windowsIcons/ie-paper.png';
 import ie from 'assets/windowsIcons/ie.png';
@@ -32,11 +33,13 @@ import {
   writingFolderIcon32,
   telegramFolderIcon32,
   emailFolderIcon32,
+  airdropFolderIcon32,
   investmentsFolderIcon16,
   bioFolderIcon16,
   writingFolderIcon16,
   telegramFolderIcon16,
-  emailFolderIcon16
+  emailFolderIcon16,
+  airdropFolderIcon16
 } from 'assets/personalIcons';
 
 const gen = () => {
@@ -51,26 +54,6 @@ const genIndex = gen();
 
 export const defaultAppState = [
   {
-    component: InternetExplorer,
-    header: {
-      title: 'Internet Explorer',
-      icon: iePaper,
-    },
-    defaultSize: {
-      width: 700,
-      height: 500,
-    },
-    defaultOffset: {
-      x: 130,
-      y: 20,
-    },
-    resizable: true,
-    minimized: false,
-    maximized: window.innerWidth < 800,
-    id: genId(),
-    zIndex: genIndex(),
-  },
-  {
     component: Winamp,
     header: {
       title: 'Winamp',
@@ -82,8 +65,8 @@ export const defaultAppState = [
       height: 0,
     },
     defaultOffset: {
-      x: 0,
-      y: 0,
+      x: window.innerWidth - 275, // Position on the right side
+      y: 100,
     },
     resizable: false,
     minimized: false,
@@ -131,20 +114,34 @@ export const defaultIconState = [
   },
   {
     id: 5,
+    icon: airdropFolderIcon32,
+    title: 'Click here for an airdrop!',
+    component: Airdrop,
+    isFocus: false,
+  },
+  {
+    id: 6,
     icon: computerLarge,
     title: 'My Computer',
     component: MyComputer,
     isFocus: false,
   },
   {
-    id: 6,
+    id: 7,
     icon: ie,
     title: 'Internet Explorer',
     component: InternetExplorer,
     isFocus: false,
   },
   {
-    id: 7,
+    id: 8,
+    icon: paintLarge,
+    title: 'Paint',
+    component: Paint,
+    isFocus: false,
+  },
+  {
+    id: 9,
     icon: mine,
     title: 'Minesweeper',
     component: Minesweeper,
@@ -267,6 +264,44 @@ export const appSettings = {
     maximized: false,
     multiInstance: false,
   },
+  'Click here for an airdrop!': {
+    header: {
+      icon: airdropFolderIcon16,
+      title: 'Airdrop - Internet Explorer',
+    },
+    component: Airdrop,
+    defaultSize: {
+      width: 800,
+      height: 600,
+    },
+    defaultOffset: {
+      x: 100,
+      y: 50,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: window.innerWidth < 900,
+    multiInstance: false,
+  },
+  'Paint': {
+    header: {
+      icon: paint,
+      title: 'untitled - Paint',
+    },
+    component: Paint,
+    defaultSize: {
+      width: 660,
+      height: 500,
+    },
+    defaultOffset: {
+      x: 200,
+      y: 50,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: false,
+    multiInstance: true,
+  },
   Minesweeper: {
     header: {
       icon: mine,
@@ -355,32 +390,13 @@ export const appSettings = {
       height: 0,
     },
     defaultOffset: {
-      x: 0,
-      y: 0,
+      x: window.innerWidth - 275, // Position on the right side
+      y: 100,
     },
     resizable: false,
     minimized: false,
     maximized: false,
     multiInstance: false,
-  },
-  Paint: {
-    header: {
-      icon: paint,
-      title: 'untitled - Paint',
-    },
-    component: Paint,
-    defaultSize: {
-      width: 660,
-      height: 500,
-    },
-    defaultOffset: {
-      x: 200,
-      y: 50,
-    },
-    resizable: true,
-    minimized: false,
-    maximized: false,
-    multiInstance: true,
   },
 };
 
