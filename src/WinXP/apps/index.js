@@ -61,8 +61,8 @@ export const defaultAppState = [
       invisible: true,
     },
     defaultSize: {
-      width: 0,
-      height: 0,
+      width: 275,
+      height: 116,
     },
     defaultOffset: {
       x: window.innerWidth - 275, // Position on the right side
@@ -386,8 +386,8 @@ export const appSettings = {
     },
     component: Winamp,
     defaultSize: {
-      width: 0,
-      height: 0,
+      width: 275,
+      height: 116,
     },
     defaultOffset: {
       x: window.innerWidth - 275, // Position on the right side
