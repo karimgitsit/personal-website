@@ -13,7 +13,8 @@ const Container = styled.div`
 
 const TextContent = styled.pre`
   margin: 0;
-  font-size: 11px;
+  font-size: 13.2px;
+  font-weight: bold;
   line-height: 1.4;
   color: #000;
   white-space: pre-wrap;
