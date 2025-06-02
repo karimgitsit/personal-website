@@ -8,6 +8,8 @@ import Paint from './Paint';
 import AngelInvestments from './AngelInvestments';
 import AboutMe from './AboutMe';
 import Writing from './Writing';
+import Telegram from './Telegram';
+import Email from './Email';
 
 import iePaper from 'assets/windowsIcons/ie-paper.png';
 import ie from 'assets/windowsIcons/ie.png';
@@ -28,9 +30,13 @@ import {
   investmentsFolderIcon32,
   bioFolderIcon32,
   writingFolderIcon32,
+  telegramFolderIcon32,
+  emailFolderIcon32,
   investmentsFolderIcon16,
   bioFolderIcon16,
-  writingFolderIcon16
+  writingFolderIcon16,
+  telegramFolderIcon16,
+  emailFolderIcon16
 } from 'assets/personalIcons';
 
 const gen = () => {
@@ -111,20 +117,34 @@ export const defaultIconState = [
   },
   {
     id: 3,
+    icon: telegramFolderIcon32,
+    title: 'Text me on telegram',
+    component: Telegram,
+    isFocus: false,
+  },
+  {
+    id: 4,
+    icon: emailFolderIcon32,
+    title: 'Email me',
+    component: Email,
+    isFocus: false,
+  },
+  {
+    id: 5,
     icon: computerLarge,
     title: 'My Computer',
     component: MyComputer,
     isFocus: false,
   },
   {
-    id: 4,
+    id: 6,
     icon: ie,
     title: 'Internet Explorer',
     component: InternetExplorer,
     isFocus: false,
   },
   {
-    id: 5,
+    id: 7,
     icon: mine,
     title: 'Minesweeper',
     component: Minesweeper,
@@ -207,6 +227,44 @@ export const appSettings = {
     resizable: true,
     minimized: false,
     maximized: window.innerWidth < 900,
+    multiInstance: false,
+  },
+  'Text me on telegram': {
+    header: {
+      icon: telegramFolderIcon16,
+      title: 'Telegram',
+    },
+    component: Telegram,
+    defaultSize: {
+      width: 0,
+      height: 0,
+    },
+    defaultOffset: {
+      x: 0,
+      y: 0,
+    },
+    resizable: false,
+    minimized: false,
+    maximized: false,
+    multiInstance: false,
+  },
+  'Email me': {
+    header: {
+      icon: emailFolderIcon16,
+      title: 'Email',
+    },
+    component: Email,
+    defaultSize: {
+      width: 0,
+      height: 0,
+    },
+    defaultOffset: {
+      x: 0,
+      y: 0,
+    },
+    resizable: false,
+    minimized: false,
+    maximized: false,
     multiInstance: false,
   },
   Minesweeper: {

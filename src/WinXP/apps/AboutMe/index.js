@@ -20,35 +20,10 @@ const TextContent = styled.pre`
   word-wrap: break-word;
 `;
 
-const LinkText = styled.span`
-  color: #0000ff;
-  text-decoration: underline;
-  cursor: pointer;
-  
-  &:hover {
-    background: #c0c0c0;
-  }
-`;
-
 function AboutMe() {
-  const handleMirrorClick = () => {
-    window.open(bioData.socialLinks.mirror, '_blank');
-  };
-
-  const bioWithLink = `${bioData.bio}
-
----
-
-Read my writing: `;
-
   return (
     <Container>
-      <TextContent>
-        {bioWithLink}
-        <LinkText onClick={handleMirrorClick}>
-          {bioData.socialLinks.mirror}
-        </LinkText>
-      </TextContent>
+      <TextContent>{bioData.bio}</TextContent>
     </Container>
   );
 }
