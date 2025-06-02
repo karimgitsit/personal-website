@@ -3,6 +3,7 @@ import Minesweeper from './Minesweeper';
 import ErrorBox from './ErrorBox';
 import MyComputer from './MyComputer';
 import Notepad from './Notepad';
+import Winamp from './Winamp';
 import Paint from './Paint';
 import AngelInvestments from './AngelInvestments';
 import AboutMe from './AboutMe';
@@ -10,6 +11,7 @@ import Writing from './Writing';
 import Telegram from './Telegram';
 import Email from './Email';
 import Airdrop from './Airdrop';
+import SpiderSolitaire from './SpiderSolitaire';
 
 import iePaper from 'assets/windowsIcons/ie-paper.png';
 import ie from 'assets/windowsIcons/ie.png';
@@ -18,33 +20,63 @@ import error from 'assets/windowsIcons/897(16x16).png';
 import computer from 'assets/windowsIcons/676(16x16).png';
 import computerLarge from 'assets/windowsIcons/676(32x32).png';
 import notepad from 'assets/windowsIcons/327(16x16).png';
-import paint from 'assets/windowsIcons/252(16x16).png';
-import paintLarge from 'assets/windowsIcons/252(32x32).png';
+import notepadLarge from 'assets/windowsIcons/327(32x32).png';
+import winamp from 'assets/windowsIcons/winamp.png';
+import paintLarge from 'assets/windowsIcons/680(32x32).png';
+import paint from 'assets/windowsIcons/680(16x16).png';
+import spider from 'assets/windowsIcons/spider.png';
 
-import {
+import { 
+  investmentsFolderIcon,
+  bioFolderIcon,
+  writingFolderIcon,
   investmentsFolderIcon32,
-  investmentsFolderIcon16,
   bioFolderIcon32,
-  bioFolderIcon16,
   writingFolderIcon32,
-  writingFolderIcon16,
   telegramFolderIcon32,
-  telegramFolderIcon16,
   emailFolderIcon32,
-  emailFolderIcon16,
   airdropFolderIcon32,
-  airdropFolderIcon16,
+  investmentsFolderIcon16,
+  bioFolderIcon16,
+  writingFolderIcon16,
+  telegramFolderIcon16,
+  emailFolderIcon16,
+  airdropFolderIcon16
 } from 'assets/personalIcons';
 
-function gen() {
-  let id = 0;
-  return () => id++;
-}
-
+const gen = () => {
+  let id = -1;
+  return () => {
+    id += 1;
+    return id;
+  };
+};
 const genId = gen();
 const genIndex = gen();
 
-export const defaultAppState = [];
+export const defaultAppState = [
+  {
+    component: Winamp,
+    header: {
+      title: 'Winamp',
+      icon: winamp,
+      invisible: true,
+    },
+    defaultSize: {
+      width: 275,
+      height: 116,
+    },
+    defaultOffset: {
+      x: window.innerWidth - 275, // Position on the right side
+      y: 100,
+    },
+    resizable: false,
+    minimized: false,
+    maximized: false,
+    id: genId(),
+    zIndex: genIndex(),
+  },
+];
 
 export const defaultIconState = [
   {
@@ -119,9 +151,9 @@ export const defaultIconState = [
   },
   {
     id: 10,
-    icon: mine,
+    icon: spider,
     title: 'Spider Solitaire',
-    component: Minesweeper,
+    component: SpiderSolitaire,
     isFocus: false,
   },
 ];
@@ -130,16 +162,16 @@ export const appSettings = {
   'Internet Explorer': {
     header: {
       icon: iePaper,
-      title: 'InternetExplorer',
+      title: 'Internet Explorer',
     },
     component: InternetExplorer,
     defaultSize: {
-      width: 700,
-      height: 500,
+      width: 800,
+      height: 600,
     },
     defaultOffset: {
-      x: 140,
-      y: 30,
+      x: 190,
+      y: 180,
     },
     resizable: true,
     minimized: false,
@@ -153,14 +185,14 @@ export const appSettings = {
     },
     component: AngelInvestments,
     defaultSize: {
-      width: 400,
-      height: 300,
+      width: 0,
+      height: 0,
     },
     defaultOffset: {
-      x: 100,
-      y: 50,
+      x: 0,
+      y: 0,
     },
-    resizable: true,
+    resizable: false,
     minimized: false,
     maximized: false,
     multiInstance: false,
@@ -168,7 +200,7 @@ export const appSettings = {
   'About Me': {
     header: {
       icon: bioFolderIcon16,
-      title: 'About Me',
+      title: 'About Me - Notepad',
     },
     component: AboutMe,
     defaultSize: {
@@ -176,8 +208,8 @@ export const appSettings = {
       height: 400,
     },
     defaultOffset: {
-      x: 150,
-      y: 40,
+      x: 200,
+      y: 100,
     },
     resizable: true,
     minimized: false,
@@ -187,7 +219,7 @@ export const appSettings = {
   'Writing': {
     header: {
       icon: writingFolderIcon16,
-      title: 'Writing',
+      title: 'Writing - Internet Explorer',
     },
     component: Writing,
     defaultSize: {
@@ -195,8 +227,8 @@ export const appSettings = {
       height: 600,
     },
     defaultOffset: {
-      x: 120,
-      y: 60,
+      x: 100,
+      y: 50,
     },
     resizable: true,
     minimized: false,
@@ -300,22 +332,22 @@ export const appSettings = {
   },
   'Spider Solitaire': {
     header: {
-      icon: mine,
-      title: 'Spider Solitaire',
+      icon: spider,
+      title: 'Spider Solitaire - Internet Explorer',
     },
-    component: Minesweeper,
+    component: SpiderSolitaire,
     defaultSize: {
-      width: 0,
-      height: 0,
+      width: 800,
+      height: 600,
     },
     defaultOffset: {
       x: 150,
-      y: 200,
+      y: 100,
     },
-    resizable: false,
+    resizable: true,
     minimized: false,
-    maximized: false,
-    multiInstance: true,
+    maximized: window.innerWidth < 900,
+    multiInstance: false,
   },
   Error: {
     header: {
@@ -374,6 +406,26 @@ export const appSettings = {
     maximized: false,
     multiInstance: true,
   },
+  Winamp: {
+    header: {
+      icon: winamp,
+      title: 'Winamp',
+      invisible: true,
+    },
+    component: Winamp,
+    defaultSize: {
+      width: 275,
+      height: 116,
+    },
+    defaultOffset: {
+      x: window.innerWidth - 275, // Position on the right side
+      y: 100,
+    },
+    resizable: false,
+    minimized: false,
+    maximized: false,
+    multiInstance: false,
+  },
 };
 
-export { InternetExplorer, Minesweeper, ErrorBox, MyComputer, Notepad, Paint };
+export { InternetExplorer, Minesweeper, ErrorBox, MyComputer, Notepad, Winamp };
