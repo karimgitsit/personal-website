@@ -1,0 +1,32 @@
+{
+  "name": "Karim",
+  "title": "Angel Investor & Entrepreneur",
+  "bio": "Passionate about early-stage technology companies and supporting visionary founders. I bring deep experience in scaling businesses and have been actively investing in the startup ecosystem for over 5 years.",
+  "profileImage": "https://via.placeholder.com/200x200/6c757d/ffffff?text=Profile",
+  "location": "San Francisco, CA",
+  "experience": [
+    {
+      "title": "Angel Investor",
+      "company": "Independent",
+      "period": "2018 - Present",
+      "description": "Active angel investor focusing on SaaS, FinTech, and HealthTech startups"
+    },
+    {
+      "title": "Entrepreneur",
+      "company": "Previous Ventures",
+      "period": "2015 - 2018",
+      "description": "Founded and scaled multiple technology companies"
+    }
+  ],
+  "socialLinks": {
+    "linkedin": "https://linkedin.com/in/your-profile",
+    "twitter": "https://twitter.com/your-handle",
+    "email": "hello@yourname.com"
+  },
+  "interests": [
+    "Artificial Intelligence",
+    "Healthcare Technology",
+    "Sustainable Tech",
+    "Early-stage Investing"
+  ]
+} 

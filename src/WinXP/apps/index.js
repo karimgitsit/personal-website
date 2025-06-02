@@ -5,6 +5,10 @@ import MyComputer from './MyComputer';
 import Notepad from './Notepad';
 import Winamp from './Winamp';
 import Paint from './Paint';
+import AngelInvestments from './AngelInvestments';
+import AboutMe from './AboutMe';
+import Articles from './Articles';
+
 import iePaper from 'assets/windowsIcons/ie-paper.png';
 import ie from 'assets/windowsIcons/ie.png';
 import mine from 'assets/minesweeper/mine-icon.png';
@@ -17,6 +21,18 @@ import winamp from 'assets/windowsIcons/winamp.png';
 import paintLarge from 'assets/windowsIcons/680(32x32).png';
 import paint from 'assets/windowsIcons/680(16x16).png';
 
+import { 
+  investmentsFolderIcon,
+  bioFolderIcon,
+  articlesFolderIcon,
+  investmentsFolderIcon32,
+  bioFolderIcon32,
+  articlesFolderIcon32,
+  investmentsFolderIcon16,
+  bioFolderIcon16,
+  articlesFolderIcon16
+} from 'assets/personalIcons';
+
 const gen = () => {
   let id = -1;
   return () => {
@@ -26,6 +42,7 @@ const gen = () => {
 };
 const genId = gen();
 const genIndex = gen();
+
 export const defaultAppState = [
   {
     component: InternetExplorer,
@@ -44,26 +61,6 @@ export const defaultAppState = [
     resizable: true,
     minimized: false,
     maximized: window.innerWidth < 800,
-    id: genId(),
-    zIndex: genIndex(),
-  },
-  {
-    component: Minesweeper,
-    header: {
-      title: 'Minesweeper',
-      icon: mine,
-    },
-    defaultSize: {
-      width: 0,
-      height: 0,
-    },
-    defaultOffset: {
-      x: 180,
-      y: 170,
-    },
-    resizable: false,
-    minimized: false,
-    maximized: false,
     id: genId(),
     zIndex: genIndex(),
   },
@@ -88,69 +85,49 @@ export const defaultAppState = [
     id: genId(),
     zIndex: genIndex(),
   },
-  {
-    component: MyComputer,
-    header: {
-      title: 'My Computer',
-      icon: computer,
-    },
-    defaultSize: {
-      width: 660,
-      height: 500,
-    },
-    defaultOffset: {
-      x: 250,
-      y: 40,
-    },
-    resizable: true,
-    minimized: false,
-    maximized: window.innerWidth < 800,
-    id: genId(),
-    zIndex: genIndex(),
-  },
 ];
 
 export const defaultIconState = [
   {
     id: 0,
-    icon: ie,
-    title: 'Internet Explorer',
-    component: InternetExplorer,
+    icon: investmentsFolderIcon32,
+    title: 'Angel Investments',
+    component: AngelInvestments,
     isFocus: false,
   },
   {
     id: 1,
-    icon: mine,
-    title: 'Minesweeper',
-    component: Minesweeper,
+    icon: bioFolderIcon32,
+    title: 'About Me',
+    component: AboutMe,
     isFocus: false,
   },
   {
     id: 2,
+    icon: articlesFolderIcon32,
+    title: 'Articles',
+    component: Articles,
+    isFocus: false,
+  },
+  {
+    id: 3,
     icon: computerLarge,
     title: 'My Computer',
     component: MyComputer,
     isFocus: false,
   },
   {
-    id: 3,
-    icon: notepadLarge,
-    title: 'Notepad',
-    component: Notepad,
-    isFocus: false,
-  },
-  {
     id: 4,
-    icon: winamp,
-    title: 'Winamp',
-    component: Winamp,
+    icon: ie,
+    title: 'Internet Explorer',
+    component: InternetExplorer,
     isFocus: false,
   },
   {
     id: 5,
-    icon: paintLarge,
-    title: 'Paint',
-    component: Paint,
+    icon: mine,
+    title: 'Minesweeper',
+    component: Minesweeper,
     isFocus: false,
   },
 ];
@@ -175,6 +152,63 @@ export const appSettings = {
     maximized: window.innerWidth < 800,
     multiInstance: true,
   },
+  'Angel Investments': {
+    header: {
+      icon: investmentsFolderIcon16,
+      title: 'Angel Investments',
+    },
+    component: AngelInvestments,
+    defaultSize: {
+      width: 800,
+      height: 600,
+    },
+    defaultOffset: {
+      x: 100,
+      y: 50,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: window.innerWidth < 900,
+    multiInstance: false,
+  },
+  'About Me': {
+    header: {
+      icon: bioFolderIcon16,
+      title: 'About Me',
+    },
+    component: AboutMe,
+    defaultSize: {
+      width: 600,
+      height: 700,
+    },
+    defaultOffset: {
+      x: 150,
+      y: 40,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: window.innerWidth < 700,
+    multiInstance: false,
+  },
+  'Articles': {
+    header: {
+      icon: articlesFolderIcon16,
+      title: 'Articles',
+    },
+    component: Articles,
+    defaultSize: {
+      width: 700,
+      height: 600,
+    },
+    defaultOffset: {
+      x: 120,
+      y: 60,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: window.innerWidth < 800,
+    multiInstance: false,
+  },
   Minesweeper: {
     header: {
       icon: mine,
@@ -198,17 +232,15 @@ export const appSettings = {
     header: {
       icon: error,
       title: 'C:\\',
-      buttons: ['close'],
-      noFooterWindow: true,
     },
     component: ErrorBox,
     defaultSize: {
       width: 380,
-      height: 0,
+      height: 200,
     },
     defaultOffset: {
-      x: window.innerWidth / 2 - 190,
-      y: window.innerHeight / 2 - 60,
+      x: Math.floor(Math.random() * 200),
+      y: Math.floor(Math.random() * 200),
     },
     resizable: false,
     minimized: false,
@@ -226,8 +258,8 @@ export const appSettings = {
       height: 500,
     },
     defaultOffset: {
-      x: 260,
-      y: 50,
+      x: 250,
+      y: 40,
     },
     resizable: true,
     minimized: false,
@@ -241,16 +273,16 @@ export const appSettings = {
     },
     component: Notepad,
     defaultSize: {
-      width: 660,
-      height: 500,
+      width: 500,
+      height: 400,
     },
     defaultOffset: {
-      x: 270,
-      y: 60,
+      x: 200,
+      y: 100,
     },
     resizable: true,
     minimized: false,
-    maximized: window.innerWidth < 800,
+    maximized: false,
     multiInstance: true,
   },
   Winamp: {
@@ -276,7 +308,7 @@ export const appSettings = {
   Paint: {
     header: {
       icon: paint,
-      title: 'Untitled - Paint',
+      title: 'untitled - Paint',
     },
     component: Paint,
     defaultSize: {
@@ -284,12 +316,12 @@ export const appSettings = {
       height: 500,
     },
     defaultOffset: {
-      x: 280,
-      y: 70,
+      x: 200,
+      y: 50,
     },
     resizable: true,
     minimized: false,
-    maximized: window.innerWidth < 800,
+    maximized: false,
     multiInstance: true,
   },
 };
