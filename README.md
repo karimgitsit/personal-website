@@ -1,6 +1,6 @@
 # WinXP
 
-🏁 Web based Windows XP desktop recreation.
+🏁 Web based Windows XP desktop recreation. 
 
 Features:
 
