@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "author": "Karim <your-email@example.com>",
-  "homepage": "https://karimgitsit.github.io/personal-website",
+  "homepage": "https://ngmilabs.com/personal-website",
   "description": "Personal website with Windows XP theme showcasing angel investments, bio, and articles",
   "dependencies": {
     "lodash.samplesize": "^4.2.0",
