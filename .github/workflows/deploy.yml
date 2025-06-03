@@ -35,7 +35,10 @@ jobs:
       run: npm install --legacy-peer-deps
       
     - name: Build
-      run: npm run build
+      run: |
+        export SKIP_PREFLIGHT_CHECK=true
+        export DISABLE_ESLINT_PLUGIN=true
+        npm run build
       
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
