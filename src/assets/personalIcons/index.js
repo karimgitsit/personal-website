@@ -21,6 +21,9 @@ export const airdropFolderIcon32 = 'data:image/svg+xml,%3Csvg width="32" height=
 // Messari Research - Dark blue folder with M symbol
 export const messariFolderIcon32 = 'data:image/svg+xml,%3Csvg width="32" height="32" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="26" height="18" x="3" y="7" rx="2" fill="%23001F3F" stroke="%23000814"/%3E%3Ctext x="16" y="19" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold"%3EM%3C/text%3E%3C/svg%3E';
 
+// Crypto 4 Gaza - Olive green folder with heart symbol (representing hope and humanitarian aid)
+export const crypto4GazaFolderIcon32 = 'data:image/svg+xml,%3Csvg width="32" height="32" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="26" height="18" x="3" y="7" rx="2" fill="%236B8E23" stroke="%23556B2F"/%3E%3Ctext x="16" y="19" font-family="Arial" font-size="12" fill="white" text-anchor="middle"%3E%E2%9D%A4%3C/text%3E%3C/svg%3E';
+
 // 16px versions for window headers
 export const investmentsFolderIcon16 = 'data:image/svg+xml,%3Csvg width="16" height="16" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="13" height="9" x="1.5" y="3.5" rx="1" fill="%23228B22" stroke="%23156F15"/%3E%3Ctext x="8" y="9" font-family="Arial" font-size="7" fill="white" text-anchor="middle"%3E%24%3C/text%3E%3C/svg%3E';
 
@@ -35,6 +38,8 @@ export const emailFolderIcon16 = 'data:image/svg+xml,%3Csvg width="16" height="1
 export const airdropFolderIcon16 = 'data:image/svg+xml,%3Csvg width="16" height="16" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="13" height="9" x="1.5" y="3.5" rx="1" fill="%23FF4500" stroke="%23CC3500"/%3E%3Ctext x="8" y="9" font-family="Arial" font-size="6" fill="white" text-anchor="middle"%3E%F0%9F%8E%81%3C/text%3E%3C/svg%3E';
 
 export const messariFolderIcon16 = 'data:image/svg+xml,%3Csvg width="16" height="16" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="13" height="9" x="1.5" y="3.5" rx="1" fill="%23001F3F" stroke="%23000814"/%3E%3Ctext x="8" y="9" font-family="Arial" font-size="7" fill="white" text-anchor="middle" font-weight="bold"%3EM%3C/text%3E%3C/svg%3E';
+
+export const crypto4GazaFolderIcon16 = 'data:image/svg+xml,%3Csvg width="16" height="16" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="13" height="9" x="1.5" y="3.5" rx="1" fill="%236B8E23" stroke="%23556B2F"/%3E%3Ctext x="8" y="9" font-family="Arial" font-size="6" fill="white" text-anchor="middle"%3E%E2%9D%A4%3C/text%3E%3C/svg%3E';
 
 // Legacy exports for backwards compatibility
 export const investmentsFolderIcon = investmentsFolderIcon32;
