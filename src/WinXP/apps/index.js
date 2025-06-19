@@ -122,13 +122,6 @@ export const defaultIconState = [
     isFocus: false,
   },
   {
-    id: 8,
-    icon: computerLarge,
-    title: 'My Computer',
-    component: MyComputer,
-    isFocus: false,
-  },
-  {
     id: 9,
     icon: ie,
     title: 'Internet Explorer',
