@@ -14,6 +14,7 @@ import Airdrop from './Airdrop';
 import SpiderSolitaire from './SpiderSolitaire';
 import MessariResearch from './MessariResearch';
 import Crypto4Gaza from './Crypto4Gaza';
+import VibeCoded from './VibeCoded';
 
 import iePaper from 'assets/windowsIcons/ie-paper.png';
 import ie from 'assets/windowsIcons/ie.png';
@@ -47,7 +48,9 @@ import {
   emailFolderIcon16,
   airdropFolderIcon16,
   messariFolderIcon16,
-  crypto4GazaFolderIcon16
+  crypto4GazaFolderIcon16,
+  vibecodedFolderIcon32,
+  vibecodedFolderIcon16
 } from 'assets/personalIcons';
 
 const gen = () => {
@@ -122,6 +125,13 @@ export const defaultIconState = [
     isFocus: false,
   },
   {
+    id: 8,
+    icon: vibecodedFolderIcon32,
+    title: 'Vibecoded',
+    component: VibeCoded,
+    isFocus: false,
+  },
+  {
     id: 9,
     icon: ie,
     title: 'Internet Explorer',
@@ -178,16 +188,16 @@ export const appSettings = {
     },
     component: AngelInvestments,
     defaultSize: {
-      width: 0,
-      height: 0,
+      width: 660,
+      height: 450,
     },
     defaultOffset: {
-      x: 0,
-      y: 0,
+      x: 200,
+      y: 60,
     },
-    resizable: false,
+    resizable: true,
     minimized: false,
-    maximized: false,
+    maximized: window.innerWidth < 800,
     multiInstance: false,
   },
   'About Me': {
@@ -321,6 +331,25 @@ export const appSettings = {
     resizable: false,
     minimized: false,
     maximized: false,
+    multiInstance: false,
+  },
+  'Vibecoded': {
+    header: {
+      icon: vibecodedFolderIcon16,
+      title: 'Vibecoded',
+    },
+    component: VibeCoded,
+    defaultSize: {
+      width: 660,
+      height: 450,
+    },
+    defaultOffset: {
+      x: 220,
+      y: 70,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: window.innerWidth < 800,
     multiInstance: false,
   },
   'Paint': {
