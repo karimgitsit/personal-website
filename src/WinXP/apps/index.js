@@ -127,7 +127,7 @@ export const defaultIconState = [
   {
     id: 8,
     icon: vibecodedFolderIcon32,
-    title: 'Vibecoded',
+    title: 'Vibecoded Projects',
     component: VibeCoded,
     isFocus: false,
   },
@@ -333,10 +333,10 @@ export const appSettings = {
     maximized: false,
     multiInstance: false,
   },
-  'Vibecoded': {
+  'Vibecoded Projects': {
     header: {
       icon: vibecodedFolderIcon16,
-      title: 'Vibecoded',
+      title: 'Vibecoded Projects',
     },
     component: VibeCoded,
     defaultSize: {
