@@ -6,8 +6,8 @@ import projects from '../../../data/projects.json';
 function VibeCoded() {
   return (
     <FolderExplorer
-      sidebarTitle="Vibecoded"
-      sidebarDescription="Things I've built with AI assistance."
+      sidebarTitle="Vibecoded Projects"
+      sidebarDescription="Things I have built"
     >
       <SectionHeader>Projects</SectionHeader>
       {projects.map((project) => (
