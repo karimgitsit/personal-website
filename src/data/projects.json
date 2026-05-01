@@ -6,6 +6,12 @@
     "url": "https://sodoku-stake.vercel.app/"
   },
   {
+    "id": 7,
+    "name": "Hyper98",
+    "description": "A Windows 98-themed frontend for Hyperliquid.",
+    "url": "https://hyper98.trade"
+  },
+  {
     "id": 2,
     "name": "Latinify",
     "description": "A Chrome Extension that translates your page into Latin.",
