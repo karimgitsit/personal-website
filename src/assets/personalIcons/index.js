@@ -7,7 +7,7 @@ import help32 from 'assets/windowsIcons/747(32x32).png';
 import help16 from 'assets/windowsIcons/747(16x16).png';
 import notepad32 from 'assets/windowsIcons/327(32x32).png';
 import notepad16 from 'assets/windowsIcons/327(16x16).png';
-import researchFolder32 from 'assets/windowsIcons/288(32x32).png';
+import researchFolder32 from 'assets/windowsIcons/299(32x32).png';
 import star32 from 'assets/windowsIcons/744(32x32).png';
 import msn from 'assets/windowsIcons/msn.png';
 import mail from 'assets/windowsIcons/mail.png';
@@ -38,7 +38,7 @@ export const emailFolderIcon16 = mail;
 export const airdropFolderIcon32 = star32;
 export const airdropFolderIcon16 = star32;
 
-// Messari Research - document folder
+// Messari Research - magnifying glass (research/analysis)
 export const messariFolderIcon32 = researchFolder32;
 export const messariFolderIcon16 = researchFolder32;
 
