@@ -13,6 +13,8 @@ import msn from 'assets/windowsIcons/msn.png';
 import mail from 'assets/windowsIcons/mail.png';
 import heart from 'assets/windowsIcons/heart.png';
 import lightning from 'assets/windowsIcons/winamp.png';
+import github32 from './github32.png';
+import github16 from './github16.png';
 
 // Angel Investments - calculator (finance)
 export const investmentsFolderIcon32 = calculator32;
@@ -49,6 +51,10 @@ export const crypto4GazaFolderIcon16 = heart;
 // Vibecoded Projects - lightning bolt
 export const vibecodedFolderIcon32 = lightning;
 export const vibecodedFolderIcon16 = lightning;
+
+// GitHub - octocat on an XP folder
+export const githubFolderIcon32 = github32;
+export const githubFolderIcon16 = github16;
 
 // Legacy exports for backwards compatibility
 export const investmentsFolderIcon = investmentsFolderIcon32;

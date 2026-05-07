@@ -15,6 +15,7 @@ import SpiderSolitaire from './SpiderSolitaire';
 import MessariResearch from './MessariResearch';
 import Crypto4Gaza from './Crypto4Gaza';
 import VibeCoded from './VibeCoded';
+import Github from './Github';
 
 import iePaper from 'assets/windowsIcons/ie-paper.png';
 import ie from 'assets/windowsIcons/ie.png';
@@ -50,7 +51,9 @@ import {
   messariFolderIcon16,
   crypto4GazaFolderIcon16,
   vibecodedFolderIcon32,
-  vibecodedFolderIcon16
+  vibecodedFolderIcon16,
+  githubFolderIcon32,
+  githubFolderIcon16
 } from 'assets/personalIcons';
 
 const gen = () => {
@@ -84,76 +87,83 @@ export const defaultIconState = [
   },
   {
     id: 2,
+    icon: githubFolderIcon32,
+    title: 'GitHub',
+    component: Github,
+    isFocus: false,
+  },
+  {
+    id: 3,
     icon: writingFolderIcon32,
     title: 'Writing',
     component: Writing,
     isFocus: false,
   },
   {
-    id: 3,
+    id: 4,
     icon: telegramFolderIcon32,
     title: 'Text me on telegram',
     component: Telegram,
     isFocus: false,
   },
   {
-    id: 4,
+    id: 5,
     icon: emailFolderIcon32,
     title: 'Email me',
     component: Email,
     isFocus: false,
   },
   {
-    id: 5,
+    id: 6,
     icon: airdropFolderIcon32,
     title: 'Click here for an airdrop!',
     component: Airdrop,
     isFocus: false,
   },
   {
-    id: 6,
+    id: 7,
     icon: messariFolderIcon32,
     title: 'Messari Research',
     component: MessariResearch,
     isFocus: false,
   },
   {
-    id: 7,
+    id: 8,
     icon: crypto4GazaFolderIcon32,
     title: 'Crypto 4 Gaza',
     component: Crypto4Gaza,
     isFocus: false,
   },
   {
-    id: 8,
+    id: 9,
     icon: vibecodedFolderIcon32,
     title: 'Vibecoded Projects',
     component: VibeCoded,
     isFocus: false,
   },
   {
-    id: 9,
+    id: 10,
     icon: ie,
     title: 'Internet Explorer',
     component: InternetExplorer,
     isFocus: false,
   },
   {
-    id: 10,
+    id: 11,
     icon: paintLarge,
     title: 'Paint',
     component: Paint,
     isFocus: false,
   },
   {
-    id: 11,
+    id: 12,
     icon: mine,
     title: 'Minesweeper',
     component: Minesweeper,
     isFocus: false,
   },
   {
-    id: 12,
+    id: 13,
     icon: spider,
     title: 'Spider Solitaire',
     component: SpiderSolitaire,
@@ -236,6 +246,25 @@ export const appSettings = {
     resizable: true,
     minimized: false,
     maximized: window.innerWidth < 900,
+    multiInstance: false,
+  },
+  'GitHub': {
+    header: {
+      icon: githubFolderIcon16,
+      title: 'GitHub',
+    },
+    component: Github,
+    defaultSize: {
+      width: 0,
+      height: 0,
+    },
+    defaultOffset: {
+      x: 0,
+      y: 0,
+    },
+    resizable: false,
+    minimized: false,
+    maximized: false,
     multiInstance: false,
   },
   'Text me on telegram': {
