@@ -105,7 +105,7 @@ export const defaultIconState = [
   {
     id: 14,
     icon: twitterFolderIcon32,
-    title: 'Follow me on X',
+    title: 'Twitter / X',
     component: Twitter,
     isFocus: false,
   },
@@ -277,10 +277,10 @@ export const appSettings = {
     maximized: false,
     multiInstance: false,
   },
-  'Follow me on X': {
+  'Twitter / X': {
     header: {
       icon: twitterFolderIcon16,
-      title: 'X (Twitter)',
+      title: 'Twitter / X',
     },
     component: Twitter,
     defaultSize: {
