@@ -16,6 +16,7 @@ import MessariResearch from './MessariResearch';
 import Crypto4Gaza from './Crypto4Gaza';
 import VibeCoded from './VibeCoded';
 import Github from './Github';
+import Twitter from './Twitter';
 
 import iePaper from 'assets/windowsIcons/ie-paper.png';
 import ie from 'assets/windowsIcons/ie.png';
@@ -53,7 +54,9 @@ import {
   vibecodedFolderIcon32,
   vibecodedFolderIcon16,
   githubFolderIcon32,
-  githubFolderIcon16
+  githubFolderIcon16,
+  twitterFolderIcon32,
+  twitterFolderIcon16
 } from 'assets/personalIcons';
 
 const gen = () => {
@@ -97,6 +100,13 @@ export const defaultIconState = [
     icon: writingFolderIcon32,
     title: 'Writing',
     component: Writing,
+    isFocus: false,
+  },
+  {
+    id: 14,
+    icon: twitterFolderIcon32,
+    title: 'Twitter / X',
+    component: Twitter,
     isFocus: false,
   },
   {
@@ -254,6 +264,25 @@ export const appSettings = {
       title: 'GitHub',
     },
     component: Github,
+    defaultSize: {
+      width: 0,
+      height: 0,
+    },
+    defaultOffset: {
+      x: 0,
+      y: 0,
+    },
+    resizable: false,
+    minimized: false,
+    maximized: false,
+    multiInstance: false,
+  },
+  'Twitter / X': {
+    header: {
+      icon: twitterFolderIcon16,
+      title: 'Twitter / X',
+    },
+    component: Twitter,
     defaultSize: {
       width: 0,
       height: 0,
