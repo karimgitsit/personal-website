@@ -15,6 +15,8 @@ import heart from 'assets/windowsIcons/heart.png';
 import lightning from 'assets/windowsIcons/winamp.png';
 import github32 from './github32.png';
 import github16 from './github16.png';
+import twitter32 from './twitter32.png';
+import twitter16 from './twitter16.png';
 
 // Angel Investments - calculator (finance)
 export const investmentsFolderIcon32 = calculator32;
@@ -55,6 +57,10 @@ export const vibecodedFolderIcon16 = lightning;
 // GitHub - octocat on an XP folder
 export const githubFolderIcon32 = github32;
 export const githubFolderIcon16 = github16;
+
+// X (Twitter) - classic Twitter bird
+export const twitterFolderIcon32 = twitter32;
+export const twitterFolderIcon16 = twitter16;
 
 // Legacy exports for backwards compatibility
 export const investmentsFolderIcon = investmentsFolderIcon32;
