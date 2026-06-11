@@ -40,5 +40,11 @@
     "name": "Long Tail MEV Strategies",
     "description": "Vibe coding some long-tail strats which I am running, mainly for learning purposes and for fun.",
     "url": null
+  },
+  {
+    "id": 8,
+    "name": "WatchDawg",
+    "description": "A Chrome extension that reveals which trackers are watching you on every page, fully local and private.",
+    "url": "https://karimgitsit.github.io/WatchDawg/"
   }
 ]
