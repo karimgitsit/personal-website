@@ -11,7 +11,6 @@ import researchFolder32 from 'assets/windowsIcons/299(32x32).png';
 import star32 from 'assets/windowsIcons/744(32x32).png';
 import msn from 'assets/windowsIcons/msn.png';
 import mail from 'assets/windowsIcons/mail.png';
-import heart from 'assets/windowsIcons/heart.png';
 import lightning from 'assets/windowsIcons/winamp.png';
 import github32 from './github32.png';
 import github16 from './github16.png';
@@ -45,10 +44,6 @@ export const airdropFolderIcon16 = star32;
 // Messari Research - magnifying glass (research/analysis)
 export const messariFolderIcon32 = researchFolder32;
 export const messariFolderIcon16 = researchFolder32;
-
-// Crypto 4 Gaza - red heart (humanitarian)
-export const crypto4GazaFolderIcon32 = heart;
-export const crypto4GazaFolderIcon16 = heart;
 
 // Vibecoded Projects - lightning bolt
 export const vibecodedFolderIcon32 = lightning;

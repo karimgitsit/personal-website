@@ -13,7 +13,6 @@ import Email from './Email';
 import Airdrop from './Airdrop';
 import SpiderSolitaire from './SpiderSolitaire';
 import MessariResearch from './MessariResearch';
-import Crypto4Gaza from './Crypto4Gaza';
 import VibeCoded from './VibeCoded';
 import Github from './Github';
 import Twitter from './Twitter';
@@ -42,7 +41,6 @@ import {
   emailFolderIcon32,
   airdropFolderIcon32,
   messariFolderIcon32,
-  crypto4GazaFolderIcon32,
   investmentsFolderIcon16,
   bioFolderIcon16,
   writingFolderIcon16,
@@ -50,7 +48,6 @@ import {
   emailFolderIcon16,
   airdropFolderIcon16,
   messariFolderIcon16,
-  crypto4GazaFolderIcon16,
   vibecodedFolderIcon32,
   vibecodedFolderIcon16,
   githubFolderIcon32,
@@ -135,13 +132,6 @@ export const defaultIconState = [
     icon: messariFolderIcon32,
     title: 'Messari Research',
     component: MessariResearch,
-    isFocus: false,
-  },
-  {
-    id: 8,
-    icon: crypto4GazaFolderIcon32,
-    title: 'Crypto 4 Gaza',
-    component: Crypto4Gaza,
     isFocus: false,
   },
   {
@@ -370,25 +360,6 @@ export const appSettings = {
     resizable: true,
     minimized: false,
     maximized: window.innerWidth < 900,
-    multiInstance: false,
-  },
-  'Crypto 4 Gaza': {
-    header: {
-      icon: crypto4GazaFolderIcon16,
-      title: 'Crypto 4 Gaza',
-    },
-    component: Crypto4Gaza,
-    defaultSize: {
-      width: 0,
-      height: 0,
-    },
-    defaultOffset: {
-      x: 0,
-      y: 0,
-    },
-    resizable: false,
-    minimized: false,
-    maximized: false,
     multiInstance: false,
   },
   'Vibecoded Projects': {
